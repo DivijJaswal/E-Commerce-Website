@@ -48,9 +48,18 @@
     position: fixed;
     z-index: -10; 
     width: 1920px;
-    height: 600px;
+    height: 570px;
     object-fit: cover;
     translate: 0px 60px;
+}
+
+.main-image img{
+    transition-property: scale();
+    transition-duration: 0.3s;
+}
+.main-image img:hover{
+    transform: scale(1.1);
+    transition-timing-function: ease-in-out;
 }
 
 .the-dude img{
@@ -58,11 +67,18 @@
     height: 300px;
     object-fit: cover;
     translate: 0px -150px;
+    transition-property: scale();
+    transition-duration: 0.3s;
+}
+
+.the-dude :hover{
+    transform: scale(1.1);
+    transition-timing-function: ease-in-out;
 }
 
 .the-dude{
     text-align: top;
-    margin-bottom: -200px;
+    margin-top: -155px;
 }
 
 .bigcard{
@@ -72,19 +88,27 @@
     margin-bottom: 100px;
 }
 
+.white-line{
+    background-color: white;
+    height: 1px;
+}
 .card{
     border: none;
     text-align: center;
     border-radius: 2.5px;
-    background-color:ghostwhite;
+    background-color:rgb(47, 22, 20);
     padding: 17px 17px;
+}
+.card img{
+    border-radius: 5px;
 }
 
 .display-main{
-    margin-bottom: 100px;
+    margin-bottom: -68px;
 }
 .card p{
     padding-top: 2.5px;
+    color: white ;
 }
 
 .major-card{
@@ -92,6 +116,25 @@
     background-color: #212529;
     margin-bottom: 10px;
     border-radius: 3.5px;
+    z-index: 10;
+    /* margin: 0 0 10 0; */
+    transition-property: margin;
+    transition-duration: 0.2s;
+}
+
+.major-card:hover {
+    margin: 0px 5px 10px 5px;
+    transition-timing-function: ease-in-out;
+    background-color: #eb6a6a;
+}
+
+@media (max-width:950px){
+      .major-card:hover{
+          margin: 10px 0px;
+          transition-timing-function: ease-in-out;
+          background-color: #eb6a6a;
+      }
+      
 }
 
 p{
