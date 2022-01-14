@@ -146,10 +146,12 @@ p{
 @media (max-width:950px ){
     .bigcard{
         flex-direction: column;
-        margin: 17px 17px;
+        margin: 17px 17px ;
+        width: 300px;
+        margin: auto;
     }
     .card img{
         margin:auto;
+        width: 250px;
     }
-
 }
